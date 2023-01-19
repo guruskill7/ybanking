@@ -1,0 +1,46 @@
+Auto Scaling
+
+Scaling up or Scaling down the number of instances based on Demand
+
+Scenorio #1
+
+Fixed number of EC2 Instances to be running always
+
+Auto Scaling Group Size
+
+Minimum Number of Instances -- 2
+Maximum Number of Instances -- 2
+Desired Number of Instances -- 2
+Target Tracking Policy -- N/A
+
+
+Scenorio #2
+Auto Scaling Group Size
+
+Minimum Number of Instances -- 1
+Maximum Number of Instances -- 4
+Desired Number of Instances -- any number between Min and Max
+Target Tracking Policy -- CPU Utilization
+
+if my CPU Utilization > 70% Add 1 Instance	Scale up
+if my CPU Utilization < 70% Remove 1 Instance	Scale down
+
+Launch Configuration Template
+
+Read only Template from which Auto Scaling Group gets the information needed to create EC2 Instance to manage the Desired State
+
+AWS provides multiple services that you can use to scale your application. Auto scaling is enabled by Amazon CloudWatch and is available at no additional charge beyond the service fees for CloudWatch and the other AWS resources that you use.
+
+
+
+Director Vivek Agnihotri shared his views on the infamous Air India flight incident where a drunk traveller urinated on a female co-passenger. On a flight from New York to Delhi, Shankar Mishra is alleged for urinating on a woman. The accused is reportedly arrested in Bengaluru, and The Kashmir Files director shared his opinion on the matter. 
+
+It all started when a media personality tweeted about the incident, and the person accused with the charges by saying, "So drunk biz man found urinating on Co passenger in flight is one Shekhar Mishra: what if his name was a Khan? Guess who would be doing cartwheels of outrage on prime time and social media? A Mishra or a Khan, law must be same for all as should response. Agree?. #AirIndiaHorror." 
+
+
+
+
+
+
+
+
